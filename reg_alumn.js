@@ -221,3 +221,38 @@ var n7='';
   
 }   
  
+  function descendente(){
+  var d='';
+var d1='';
+var d2='';
+var d3='';
+var d4='';
+var d5='';
+var d6='';
+var d7='';
+ alumnos.sort((a,b)=>b.calificacion-a.calificacion);
+
+ 
+      for (var i=0; i<alumnos.length; i++){
+    
+      
+      d+= alumnos[i].id + '\n';
+      d1+=alumnos[i].names+ '\n';
+      d2+=alumnos[i].apepaterno + '\n';
+      d3+=alumnos[i].apematerno+ '\n';
+      d4+=alumnos[i].edad+ '\n';
+      d5+=alumnos[i].curso+ '\n';
+      d6+=alumnos[i].calificacion+ '\n';
+      d7+=alumnos[i].grupo+ '\n';
+      
+ 
+   }
+   document.getElementById('des').innerText=d;
+   document.getElementById('des1').innerText=d1;
+   document.getElementById('des2').innerText=d2;
+   document.getElementById('des3').innerText=d3;
+   document.getElementById('des4').innerText=d4;
+   document.getElementById('des5').innerText=d5;
+   document.getElementById('des6').innerText=d6;
+   document.getElementById('des7').innerText=d7;
+ }
