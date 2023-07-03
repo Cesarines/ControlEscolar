@@ -92,3 +92,16 @@ function Alumno(id, names,apepaterno,apematerno, edad,curso,calificacion,grupo) 
   }
   
 }
+function grupos(){
+  var grupo= parseInt(document.getElementById('grupo').value);
+  var id = parseInt(document.getElementById('matriculados').value);
+  if (!(isNaN(grupo) || isNaN(id))){
+    for (var i=0; i<alumnos.length; i++){
+      if (alumnos[i].id==id){
+        alumnos[i].grupo=grupo;
+      }
+    }
+    ListaNuevos();
+  }
+  
+}
