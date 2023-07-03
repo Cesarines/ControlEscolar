@@ -105,3 +105,15 @@ function grupos(){
   }
   
 }
+function califi(){
+  var calificacion= parseFloat(document.getElementById('cali').value);
+  var id = document.getElementById('matriculadosq').value;
+  if (!(isNaN(calificacion) || isNaN(id))){
+    for (var ii=0; ii<alumnos.length; ii++){
+      if (alumnos[ii].id==id){
+        alumnos[ii].calificacion=calificacion;
+      }
+    }
+    ListaNuevos();
+  } 
+}
