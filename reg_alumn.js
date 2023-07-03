@@ -40,4 +40,14 @@ function Alumno(id, names,apepaterno,apematerno, edad,curso,calificacion,grupo) 
     calcupro();
    
   }  
- 
+   function mostrarListado(){
+      var mensaje=confirm("Verifique los Datos Antes de Guardar");
+      if(mensaje){
+      alert("Alumnos Registrado Exitosamente");
+      document.getElementById("idAlumno").innerHTML=obtenerMatricula();
+      document.getElementById("nombreAlumno").innerHTML=obtenerNombre();
+      document.getElementById("apepaternos").innerHTML=obtenerApepat();
+      document.getElementById("apematernos").innerHTML=obtenerApemat();
+      document.getElementById("edadAlumno").innerHTML=obtenerEdad();
+      }
+  }
