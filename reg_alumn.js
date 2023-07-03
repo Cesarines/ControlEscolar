@@ -79,3 +79,16 @@ function Alumno(id, names,apepaterno,apematerno, edad,curso,calificacion,grupo) 
     document.getElementById('calificacionListado').innerText = listacalificacion;
     document.getElementById('grupoListado').innerText = listagrupo;
   }
+  function registrarCurso(){
+  var curso= parseInt(document.getElementById('id_curso').value);
+  var id = parseInt(document.getElementById('matriculaa').value);
+  if (!(isNaN(curso) || isNaN(id))){
+    for (var i=0; i<alumnos.length; i++){
+      if (alumnos[i].id==id){
+        alumnos[i].curso= curso;
+      }
+    }
+    ListaNuevos();
+  }
+  
+}
