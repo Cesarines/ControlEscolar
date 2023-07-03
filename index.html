@@ -26,5 +26,51 @@
     <div class="dos" onclick="promedio()"><button class="btn">Obtener Promedio</button></div>
     <div class="dos" onclick="ascdesc()"><button class="btn">Lista de Alumnos Ascendente y Descendente</button></div>
     </div>
+    <div id="ingreso">  
+    <div class="container">
+        <div class="doce"><h3>REGISTRO DE ALUMNO DE NUEVO INGRESO</h3></div>
+    </div>
+    <div class="container">
+    <form style="display: flex;">
+        <div class="dos">
+        <input type="text" class="form" id="matricula" placeHolder="Matricula"/>
+        </div>
+        <div class="dos">
+        <input type="text" class="form" id="nombre" placeHolder="Nombre(s)"/>
+        </div>
+        <div class="dos">
+        <input type="text" class="form" id="apepaterno" placeholder="Apellido Paterno">
+        </div>
+        <div class="dos">
+        <input type="text" class="form" id="apematerno" placeholder="Apellido Materno">  
+        </div>
+        <div class="dos">
+        <input type="text"  class="form" id="edad" placeholder="edad">
+        </div>
+        <div class="dos">
+        <input type="button" class="btn-form" onClick="crearAlumno();" value="Enviar mis datos!">  
+        </div>
+      </form>
+     </div>
+      <br>
+     
+    <div class="container">
+      <table>
+        <tr><th>Matricula</th>
+            <th>Nombre(s)</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td id="idAlumno"></td>
+            <td id="nombreAlumno"></td>
+            <td id="apepaternos"></td>
+            <td id="apematernos"></td>
+            <td id="edadAlumno"></td>
+        </tr>
+      </table>
+    </div>    
+ </div>
     </body>
 </html>
