@@ -129,3 +129,15 @@ function buscarAlum(){
   document.getElementById('datosiete').innerHTML=resultadoss.calificacion;
   document.getElementById('datoocho').innerHTML=resultadoss.grupo;
 }
+function buscarApe(){
+  var refe=document.getElementById('ape').value;
+  var resultadosss=alumnos.find(alu=>alu.apepaterno==refe);
+  document.getElementById('datounoo').innerHTML=resultadosss.id;
+  document.getElementById('datodoss').innerHTML=resultadosss.names;
+  document.getElementById('datotress').innerHTML=resultadosss.apepaterno;
+  document.getElementById('datocuatroo').innerHTML=resultadosss.apematerno;
+  document.getElementById('datocincoo').innerHTML=resultadosss.edad;
+  document.getElementById('datoseiss').innerHTML=resultadosss.curso;
+  document.getElementById('datosietee').innerHTML=resultadosss.calificacion;
+  document.getElementById('datoochoo').innerHTML=resultadosss.grupo;
+}
