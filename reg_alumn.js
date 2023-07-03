@@ -117,3 +117,15 @@ function califi(){
     ListaNuevos();
   } 
 }
+function buscarAlum(){
+  var ref=document.getElementById('dato').value;
+  var resultadoss=alumnos.find(alu=>alu.names==ref);
+  document.getElementById('datouno').innerHTML=resultadoss.id;
+  document.getElementById('datodos').innerHTML=resultadoss.names;
+  document.getElementById('datotres').innerHTML=resultadoss.apepaterno;
+  document.getElementById('datocuatro').innerHTML=resultadoss.apematerno;
+  document.getElementById('datocinco').innerHTML=resultadoss.edad;
+  document.getElementById('datoseis').innerHTML=resultadoss.curso;
+  document.getElementById('datosiete').innerHTML=resultadoss.calificacion;
+  document.getElementById('datoocho').innerHTML=resultadoss.grupo;
+}
