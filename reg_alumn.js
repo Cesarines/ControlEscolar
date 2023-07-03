@@ -51,3 +51,31 @@ function Alumno(id, names,apepaterno,apematerno, edad,curso,calificacion,grupo) 
       document.getElementById("edadAlumno").innerHTML=obtenerEdad();
       }
   }
+  function ListaNuevos(){
+    var listaid='';
+    var listanombre='';
+    var listapaterno='';
+    var listamaterno='';
+    var listaedad='';
+    var listacurso='';
+    var listacalificacion='';
+    var listagrupo='';
+    for(var i=0; i<alumnos.length; i++){
+      listaid+=alumnos[i].id+'\n';
+      listanombre+=alumnos[i].names+'\n';
+      listapaterno+=alumnos[i].apepaterno+'\n';
+      listamaterno+=alumnos[i].apematerno+'\n';
+      listaedad+=alumnos[i].edad+'\n'; 
+      listacurso+=alumnos[i].curso+'\n';
+      listacalificacion+=alumnos[i].calificacion+'\n';
+      listagrupo+=alumnos[i].grupo+'\n';
+    }
+   document.getElementById('idListado').innerText =listaid;
+       document.getElementById('nombreListado').innerText =listanombre;
+    document.getElementById('paternoListado').innerText = listapaterno;
+    document.getElementById('maternoListado').innerText = listamaterno;
+    document.getElementById('edadListado').innerText = listaedad;
+    document.getElementById('cursoListado').innerText = listacurso;
+    document.getElementById('calificacionListado').innerText = listacalificacion;
+    document.getElementById('grupoListado').innerText = listagrupo;
+  }
