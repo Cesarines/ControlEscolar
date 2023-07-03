@@ -1,0 +1,60 @@
+.container{
+    width: 100%;
+    display: flex;
+}
+.dos{
+    width: 20%;
+    text-align: center;
+    margin-left: 3%;
+    display: flex;
+   
+}
+.doce{
+    width: 100%;
+    text-align: center;
+    
+}
+.btn{
+    background-color: aquamarine;
+    font-size:10.5pt;
+    border-radius: 15px;
+    border: 0px;
+    color: blue;
+    width: 100%;
+    padding-top:5%;
+    padding-bottom: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.form{
+    width: auto;
+    border-radius: 15px;
+    padding-top:5%;
+    padding-bottom: 5%;
+
+}
+table{
+    width: 100%;
+}
+th{
+    background-color: aquamarine;
+}
+td{
+    background-color: aqua;
+    text-align: center;
+}
+.btn-form{
+    background-color: green;
+    padding-top:11%;
+    padding-bottom: 11%;
+    color: white;
+    border-radius: 15px;
+    border: 0px;
+}
+.btn_desc{
+    background-color:aqua;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
