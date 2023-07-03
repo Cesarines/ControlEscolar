@@ -240,5 +240,57 @@
 
    
 </div>
+<div id="pro">
+    <div class="container">
+        <div class="doce"><h3>CONOCE EL PROMEDIO DEL GRUPO</h3></div>
+    </div>
+    <div class="container">
+        <form>
+            <div class="dos" style="display: flex;">
+                            <input type="text" id="progrupo" class="form" placeholder="Ingresa el Numero del Grupo">
+                            <input type="button" class="btn_desc" onClick="calcupro();" value="Buscar">
+                            </div>
+                 
+        </form>
+    </div>
+    <br>
+    <table>
+        <tr><th>Matricula</th>
+            <th>Nombre(s)</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Edad</th>
+            <th>Curso</th>
+            <th>Calificacion</th>
+            <th>Grupo</th>
+        </tr>
+        <tr>
+            <td id="idListadog"></td>
+            <td id="nombreListadog"></td>
+            <td id="paternoListadog"></td>
+            <td id="maternoListadog"></td>
+            <td id="edadListadog"></td>
+            <td id="cursoListadog"></td>
+            <td id="calificacionListadog"></td>
+            <td id="grupoListadog"></td>
+        </tr>
+        <tr>
+            <td colspan="6">SUMA DE CALIFICACIONES:</td>
+          
+            <td><span id="promediototal"></span></td>
+           
+        </tr>
+        <tr>
+            <td colspan="6">NUMERO DE ALUMNOS</td>
+            <td><span id="num"></span></td>
+        </tr>
+        <tr>
+            <td colspan="6">PROMEDIO GENERAL</td>
+            <td><span id="p"></span></td>
+        </tr>
+      </table>
+    
+
+</div>
     </body>
 </html>
