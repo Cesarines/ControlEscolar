@@ -256,3 +256,44 @@ var d7='';
    document.getElementById('des6').innerText=d6;
    document.getElementById('des7').innerText=d7;
  }
+
+  function descendente_otra(){
+  var dd='';
+var dd1='';
+var dd2='';
+var dd3='';
+var dd4='';
+var dd5='';
+var dd6='';
+var dd7='';
+ alumnos.sort((a,b)=>a.id-b.id);
+
+ 
+      for (var i=0; i<alumnos.length; i++){
+    
+      
+      dd+= alumnos[i].id + '\n';
+      dd1+=alumnos[i].names+ '\n';
+      dd2+=alumnos[i].apepaterno + '\n';
+      dd3+=alumnos[i].apematerno+ '\n';
+      dd4+=alumnos[i].edad+ '\n';
+      dd5+=alumnos[i].curso+ '\n';
+      dd6+=alumnos[i].calificacion+ '\n';
+      dd7+=alumnos[i].grupo+ '\n';
+      
+ 
+   }
+   document.getElementById('ddes').innerText=dd;
+   document.getElementById('ddes1').innerText=dd1;
+   document.getElementById('ddes2').innerText=dd2;
+   document.getElementById('ddes3').innerText=dd3;
+   document.getElementById('ddes4').innerText=dd4;
+   document.getElementById('ddes5').innerText=dd5;
+   document.getElementById('ddes6').innerText=dd6;
+   document.getElementById('ddes7').innerText=dd7;
+ }
+
+
+
+
+
