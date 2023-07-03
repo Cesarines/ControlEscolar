@@ -141,3 +141,44 @@ function buscarApe(){
   document.getElementById('datosietee').innerHTML=resultadosss.calificacion;
   document.getElementById('datoochoo').innerHTML=resultadosss.grupo;
 }
+function calcupro(){
+  var proo=document.getElementById('progrupo').value;
+  var listaidg='';
+  var listanombreg='';
+  var listapaternog='';
+  var listamaternog='';
+  var listaedadg='';
+  var listacursog='';
+  var listacalificaciong='';
+  var listagrupog='';
+  var listapromedio=0;
+  var num=0;
+  var p=0;
+  for(var i=0; i<alumnos.length; i++){
+    if(alumnos[i].grupo==proo){
+    listaidg+=alumnos[i].id+'\n';
+    listanombreg+=alumnos[i].names+'\n';
+    listapaternog+=alumnos[i].apepaterno+'\n';
+    listamaternog+=alumnos[i].apematerno+'\n';
+    listaedadg+=alumnos[i].edad+'\n'; 
+    listacursog+=alumnos[i].curso+'\n';
+    listacalificaciong+=alumnos[i].calificacion+'\n';
+    listagrupog+=alumnos[i].grupo+'\n';
+    listapromedio+=alumnos[i].calificacion;
+    num++;
+    p=(listapromedio/num);
+  }}
+ document.getElementById('idListadog').innerText = listaidg;
+     document.getElementById('nombreListadog').innerText = listanombreg;
+  document.getElementById('paternoListadog').innerText = listapaternog;
+  document.getElementById('maternoListadog').innerText = listamaternog;
+  document.getElementById('edadListadog').innerText = listaedadg;
+  document.getElementById('cursoListadog').innerText = listacursog;
+  document.getElementById('calificacionListadog').innerText = listacalificaciong;
+  document.getElementById('grupoListadog').innerText = listagrupog;
+  document.getElementById('promediototal').innerText=listapromedio;
+  document.getElementById('num').innerText=num;
+  document.getElementById('p').innerText=p;
+
+ 
+}
