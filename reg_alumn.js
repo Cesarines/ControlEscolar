@@ -182,3 +182,42 @@ function calcupro(){
 
  
 }
+function ascendente(){
+var n='';
+var n1='';
+var n2='';
+var n3='';
+var n4='';
+var n5='';
+var n6='';
+var n7='';
+ alumnos.sort((a,b)=>a.calificacion-b.calificacion);
+
+ 
+      for (var i=0; i<alumnos.length; i++){
+    
+      
+      n+= alumnos[i].id+'\n';
+      n1+=alumnos[i].names+'\n';
+      n2+=alumnos[i].apepaterno+'\n';
+      n3+=alumnos[i].apematerno+'\n';
+      n4+=alumnos[i].edad+'\n';
+      n5+=alumnos[i].curso+'\n';
+      n6+=alumnos[i].calificacion+'\n';
+      n7+=alumnos[i].grupo+'\n';
+      
+ 
+   }
+   document.getElementById('asc').innerText=n;
+   document.getElementById('asc1').innerText=n1;
+   document.getElementById('asc2').innerText=n2;
+   document.getElementById('asc3').innerText=n3;
+   document.getElementById('asc4').innerText=n4;
+   document.getElementById('asc5').innerText=n5;
+   document.getElementById('asc6').innerText=n6;
+   document.getElementById('asc7').innerText=n7;
+   
+   
+  
+}   
+ 
